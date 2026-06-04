@@ -4,7 +4,9 @@ import productRouter from '../routes/productRouter.js'
 import employeeRouter from '../routes/employeeRouter.js'
 
 const app = express()
-app.listen(3000)
+app.listen(3000,()=>{
+    console.log("Server is running in port 3000")
+})
 
 app.use("/products",productRouter)
 app.use("/employees",employeeRouter)
